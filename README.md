@@ -7,7 +7,7 @@ The package now supports two complementary modes:
 1. **Original simulation mode** for deterministic scenario execution over a full time horizon.
 2. **RL environment mode** for closed-loop control experiments in which an agent adjusts environmental stimuli at each control step to keep the cattle-hall vital climate variables inside configurable optimal ranges.
 
-The goal of this update is to prepare the simulator for future Gym/Gymnasium integration **without disturbing the original core equations, transition formulas, or configuration flow**.
+The goal of this update is to prepare the simulator for future Gym-style integration **without disturbing the original core equations, transition formulas, or configuration flow**.
 
 ---
 
@@ -51,7 +51,7 @@ This means the package was not rewritten into a new physics model. Instead, the 
 - done flags
 - rollout history
 
-This approach keeps the package scientifically stable while making it easier to connect to Gym/Gymnasium later.
+This approach keeps the package scientifically stable while making it easier to connect to Gym-style later.
 
 ---
 
