@@ -29,7 +29,7 @@ in order to keep hall vital conditions within target bands, especially:
 - indoor relative humidity
 - airflow
 
-This makes the package suitable for future work on policy learning, control benchmarking, random-action rollouts, reward shaping, and later Python Gym bindings.
+This makes the package suitable for future work on policy learning, control benchmarking, random-action rollouts, reward shaping.
 
 ---
 
@@ -173,7 +173,6 @@ These target bands and weights are configurable through the environment options 
 
 This update prepares the package for several future workflows:
 
-- Gym / Gymnasium wrapping from Python
 - policy-gradient or actor-critic control experiments
 - MPC vs RL comparison studies
 - reward design experiments
@@ -353,9 +352,9 @@ RLStepResult result = env.step(action);
 
 ## 14. Future direction
 
-This package is now structurally ready for a Python Gym/Gymnasium wrapper because the C++ environment exposes the correct control pattern.
+This package is now structurally ready for a Gym-style wrapper because the C++ environment exposes the correct control pattern.
 
-A future Python binding layer can be added with tools such as:
+A future binding layer can be added with tools such as:
 
 - `pybind11`
 - C API wrappers
@@ -394,4 +393,4 @@ In practical terms, the package now provides:
 - SVG graph export
 - a clean base for future Gym integration
 
-This makes it suitable for the next development stage: mounting a Python Gym layer or training a controller directly against the preserved C++ simulator backend.
+This makes it suitable for the next development stage: mounting a Gym-style layer or training a controller directly against the preserved C++ simulator backend.
