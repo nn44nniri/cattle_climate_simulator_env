@@ -1,6 +1,6 @@
 # cattle_climate_simulator_env
 
-`cattle_climate_simulator_env` is a lightweight C++ cattle-building climate simulator package that preserves the original mechanical simulation core of `cattle_climate_simulator` [cattle_climate_simulator](https://github.com/nn44nniri/cattle_climate_simulator)
+`cattle_climate_simulator_env` is a lightweight C++ cattle-building climate simulator package that preserves the original mechanical simulation core of [cattle_climate_simulator](https://github.com/nn44nniri/cattle_climate_simulator)
  and adds a new **reinforcement-learning-oriented environment layer** for stepwise control. It is close to a Gym-style RL environment core, but it is not yet a complete Gym library by itself in the usual sense. It is a C++ Gym-like environment wrapper around the cattle climate simulator, designed so a reinforcement learning agent can interact with the cattle hall climate through reset/step style transitions.
 The package now supports two complementary modes:
 
