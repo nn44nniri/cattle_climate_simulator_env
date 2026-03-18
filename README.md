@@ -237,6 +237,10 @@ Example:
   --csv build/fan_only_hot_300m.csv \
   --graph build/vital_params_0_300m.svg
 ```
+* Show result after running the test:
+
+![Show result after running the test](build/rl_rollout.svg)
+
 
 This mode is appropriate for deterministic scenario analysis over a full horizon.
 
